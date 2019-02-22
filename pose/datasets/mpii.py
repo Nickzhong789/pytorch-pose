@@ -32,7 +32,7 @@ class Mpii(data.Dataset):
 
         self.train, self.valid = [], []
         for idx, val in enumerate(self.anno):
-            if val['isValidation'] == True:
+            if val['isValidation']:
                 self.valid.append(idx)
             else:
                 self.train.append(idx)
