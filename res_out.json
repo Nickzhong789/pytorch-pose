@@ -1,0 +1,372 @@
+{
+	"Conv2d-1": {
+		"input_shape": [1, 3, 256, 256],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 9408
+	},
+	"BatchNorm2d-2": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-3": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"nb_params": 0
+	},
+	"MaxPool2d-4": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-5": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 36864
+	},
+	"BatchNorm2d-6": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-7": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-8": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 36864
+	},
+	"BatchNorm2d-9": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-10": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"BasicBlock-11": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-12": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 36864
+	},
+	"BatchNorm2d-13": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-14": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-15": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 36864
+	},
+	"BatchNorm2d-16": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-17": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"BasicBlock-18": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 64, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-19": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 73728
+	},
+	"BatchNorm2d-20": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-21": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-22": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-23": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"Conv2d-24": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 8192
+	},
+	"BatchNorm2d-25": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-26": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"BasicBlock-27": {
+		"input_shape": [1, 64, 64, 64],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-28": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-29": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-30": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-31": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-32": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-33": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"BasicBlock-34": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-35": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 294912
+	},
+	"BatchNorm2d-36": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-37": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-38": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 589824
+	},
+	"BatchNorm2d-39": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"Conv2d-40": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-41": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-42": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"BasicBlock-43": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-44": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 589824
+	},
+	"BatchNorm2d-45": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-46": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-47": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 589824
+	},
+	"BatchNorm2d-48": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-49": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"BasicBlock-50": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-51": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 1179648
+	},
+	"BatchNorm2d-52": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 512
+	},
+	"ReLU-53": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-54": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 2359296
+	},
+	"BatchNorm2d-55": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 512
+	},
+	"Conv2d-56": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 131072
+	},
+	"BatchNorm2d-57": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 512
+	},
+	"ReLU-58": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"nb_params": 0
+	},
+	"BasicBlock-59": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 512, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-60": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 2359296
+	},
+	"BatchNorm2d-61": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 512
+	},
+	"ReLU-62": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-63": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 2359296
+	},
+	"BatchNorm2d-64": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"trainable": true,
+		"nb_params": 512
+	},
+	"ReLU-65": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"nb_params": 0
+	},
+	"BasicBlock-66": {
+		"input_shape": [1, 512, 8, 8],
+		"output_shape": [1, 512, 8, 8],
+		"nb_params": 0
+	}
+}

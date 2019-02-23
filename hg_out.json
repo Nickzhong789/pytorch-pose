@@ -1,0 +1,1046 @@
+{
+	"Conv2d-1": {
+		"input_shape": [1, 3, 256, 256],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 9408
+	},
+	"BatchNorm2d-2": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-3": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"nb_params": 0
+	},
+	"ReLU-4": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"nb_params": 0
+	},
+	"BatchNorm2d-5": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-6": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"nb_params": 0
+	},
+	"Conv2d-7": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 4096
+	},
+	"BatchNorm2d-8": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-9": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"nb_params": 0
+	},
+	"Conv2d-10": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 36864
+	},
+	"BatchNorm2d-11": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"trainable": true,
+		"nb_params": 64
+	},
+	"ReLU-12": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 64, 128, 128],
+		"nb_params": 0
+	},
+	"Conv2d-13": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 128, 128, 128],
+		"trainable": true,
+		"nb_params": 8192
+	},
+	"Conv2d-14": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 128, 128, 128],
+		"trainable": true,
+		"nb_params": 8192
+	},
+	"Bottleneck-15": {
+		"input_shape": [1, 64, 128, 128],
+		"output_shape": [1, 128, 128, 128],
+		"nb_params": 0
+	},
+	"MaxPool2d-16": {
+		"input_shape": [1, 128, 128, 128],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"BatchNorm2d-17": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-18": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-19": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 16384
+	},
+	"BatchNorm2d-20": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-21": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-22": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-23": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-24": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-25": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Conv2d-26": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-27": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"BatchNorm2d-28": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-29": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-30": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-31": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-32": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-33": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-34": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-35": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-36": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-37": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"BatchNorm2d-38": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-39": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-40": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-41": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-42": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-43": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-44": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-45": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-46": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-47": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"BatchNorm2d-48": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-49": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-50": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-51": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-52": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-53": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-54": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-55": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-56": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-57": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"BatchNorm2d-58": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-59": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-60": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-61": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-62": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-63": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-64": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-65": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-66": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-67": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"BatchNorm2d-68": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-69": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-70": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-71": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-72": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-73": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-74": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-75": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-76": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-77": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"BatchNorm2d-78": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-79": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-80": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-81": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-82": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-83": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-84": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-85": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-86": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-87": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"BatchNorm2d-88": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-89": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-90": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-91": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-92": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-93": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-94": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-95": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-96": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-97": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"BatchNorm2d-98": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-99": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-100": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-101": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-102": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-103": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-104": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-105": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-106": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-107": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"BatchNorm2d-108": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-109": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-110": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-111": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-112": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-113": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-114": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-115": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-116": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-117": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"nb_params": 0
+	},
+	"BatchNorm2d-118": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-119": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-120": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-121": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-122": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-123": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-124": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-125": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-126": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-127": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"nb_params": 0
+	},
+	"BatchNorm2d-128": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-129": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-130": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-131": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-132": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-133": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-134": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-135": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 128, 4, 4],
+		"nb_params": 0
+	},
+	"Conv2d-136": {
+		"input_shape": [1, 128, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-137": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 4, 4],
+		"nb_params": 0
+	},
+	"Upsample-138": {
+		"input_shape": [1, 256, 4, 4],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"BatchNorm2d-139": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-140": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-141": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-142": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-143": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-144": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-145": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-146": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 128, 8, 8],
+		"nb_params": 0
+	},
+	"Conv2d-147": {
+		"input_shape": [1, 128, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-148": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 8, 8],
+		"nb_params": 0
+	},
+	"Upsample-149": {
+		"input_shape": [1, 256, 8, 8],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"BatchNorm2d-150": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-151": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-152": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-153": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-154": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-155": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-156": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-157": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 128, 16, 16],
+		"nb_params": 0
+	},
+	"Conv2d-158": {
+		"input_shape": [1, 128, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-159": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 16, 16],
+		"nb_params": 0
+	},
+	"Upsample-160": {
+		"input_shape": [1, 256, 16, 16],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"BatchNorm2d-161": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-162": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-163": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-164": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-165": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-166": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-167": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-168": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 128, 32, 32],
+		"nb_params": 0
+	},
+	"Conv2d-169": {
+		"input_shape": [1, 128, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-170": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 32, 32],
+		"nb_params": 0
+	},
+	"Upsample-171": {
+		"input_shape": [1, 256, 32, 32],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"Hourglass-172": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"BatchNorm2d-173": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-174": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-175": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"BatchNorm2d-176": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-177": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-178": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 147456
+	},
+	"BatchNorm2d-179": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"trainable": true,
+		"nb_params": 128
+	},
+	"ReLU-180": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 128, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-181": {
+		"input_shape": [1, 128, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 32768
+	},
+	"Bottleneck-182": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-183": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 65536
+	},
+	"BatchNorm2d-184": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"trainable": true,
+		"nb_params": 256
+	},
+	"ReLU-185": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"ReLU-186": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 256, 64, 64],
+		"nb_params": 0
+	},
+	"Conv2d-187": {
+		"input_shape": [1, 256, 64, 64],
+		"output_shape": [1, 16, 64, 64],
+		"trainable": true,
+		"nb_params": 4096
+	}
+}
