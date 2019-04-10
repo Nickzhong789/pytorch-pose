@@ -21,7 +21,7 @@ class fcResnet(nn.Module):
             self.conv1by1 = nn.Conv2d(512, self.num_outputs, (1, 1))
 
         self.resnet = nn.Sequential(*list(self.resnet.children())[:-2])
-        self.resnet = self.resnet
+        # self.resnet = self.resnet
 
         self.conv_transpose = nn.ConvTranspose2d(self.num_outputs, self.num_outputs, kernel_size=32, stride=8)
         self.sigmoid = torch.nn.Sigmoid()
