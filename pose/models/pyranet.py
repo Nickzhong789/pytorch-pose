@@ -1,22 +1,28 @@
 '''
-Hourglass network inserted in the pre-activated Resnet
-Use lr=0.01 for current version
+PyTorch reimplementation for the paper
+Learning Feature Pyramids for Human Pose Estimation
+Wei Yang, Shuang Li, Wanli Ouyang, Hongsheng Li, Xiaogang Wang
+ICCV 2017
+
+Original Torch code: https://github.com/bearpaw/PyraNet
+
 (c) YANG, Wei
 '''
 import torch.nn as nn
 import torch.nn.functional as F
+import math
 from .modules import Bottleneck, PyramidResidual
 
 
-__all__ = ['HourglassNet', 'hg']
+__all__ = ['pyranet']
 
 
 class Hourglass(nn.Module):
-    def __init__(self, block, num_blocks, planes, depth):
+    def __init__(self, num_blocks, planes, depth):
         super(Hourglass, self).__init__()
         self.depth = depth
-        self.block = block
-        self.hg = self._make_hour_glass(block, num_blocks, planes, depth)
+        self.upsample = nn.Upsample(scale_factor=2)
+        self.hg = self._make_hour_glass(num_blocks, planes, depth)
 
     def _make_residual(self, block, num_blocks, planes):
         layers = []
@@ -24,14 +30,19 @@ class Hourglass(nn.Module):
             layers.append(block(planes*block.expansion, planes))
         return nn.Sequential(*layers)
 
-    def _make_hour_glass(self, block, num_blocks, planes, depth):
+    def _make_hour_glass(self, num_blocks, planes, depth):
         hg = []
         for i in range(depth):
             res = []
-            for j in range(3):
-                res.append(self._make_residual(block, num_blocks, planes))
+            blockup = PyramidResidual if i > 0 else Bottleneck
+            blockdown = PyramidResidual if i > 1 else Bottleneck
+
+            res.append(self._make_residual(blockup, num_blocks, planes))
+            res.append(self._make_residual(blockdown, num_blocks, planes))
+            res.append(self._make_residual(blockdown, num_blocks, planes))
+
             if i == 0:
-                res.append(self._make_residual(block, num_blocks, planes))
+                res.append(self._make_residual(blockdown, num_blocks, planes))
             hg.append(nn.ModuleList(res))
         return nn.ModuleList(hg)
 
@@ -45,7 +56,7 @@ class Hourglass(nn.Module):
         else:
             low2 = self.hg[n-1][3](low1)
         low3 = self.hg[n-1][2](low2)
-        up2 = F.interpolate(low3, scale_factor=2)
+        up2 = self.upsample(low3)
         out = up1 + up2
         return out
 
@@ -55,9 +66,10 @@ class Hourglass(nn.Module):
 
 class HourglassNet(nn.Module):
     '''Hourglass model from Newell et al ECCV 2016'''
-    def __init__(self, block, num_stacks=2, num_blocks=4, num_classes=16):
+    def __init__(self, num_stacks=2, num_blocks=4, num_classes=16):
         super(HourglassNet, self).__init__()
 
+        block = PyramidResidual
         self.inplanes = 64
         self.num_feats = 128
         self.num_stacks = num_stacks
@@ -74,7 +86,7 @@ class HourglassNet(nn.Module):
         ch = self.num_feats*block.expansion
         hg, res, fc, score, fc_, score_ = [], [], [], [], [], []
         for i in range(num_stacks):
-            hg.append(Hourglass(block, num_blocks, self.num_feats, 4))
+            hg.append(Hourglass(num_blocks, self.num_feats, 4))
             res.append(self._make_residual(block, self.num_feats, num_blocks))
             fc.append(self._make_fc(ch, ch))
             score.append(nn.Conv2d(ch, num_classes, kernel_size=1, bias=True))
@@ -138,7 +150,7 @@ class HourglassNet(nn.Module):
         return out
 
 
-def hg(**kwargs):
-    model = HourglassNet(Bottleneck, num_stacks=kwargs['num_stacks'], num_blocks=kwargs['num_blocks'],
+def pyranet(**kwargs):
+    model = HourglassNet(num_stacks=kwargs['num_stacks'], num_blocks=kwargs['num_blocks'],
                          num_classes=kwargs['num_classes'])
     return model
